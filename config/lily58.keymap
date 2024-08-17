@@ -182,10 +182,20 @@
 &kp TAB         &kp Q               &kp W            &kp F        &kp P            &kp B                                          &kp J          &kp L                &kp U            &kp Y              &kp SEMICOLON    &kp ENTER
 &kp LEFT_SHIFT  &kp A               &kp R            &kp S        &kp T            &kp G                                          &kp M          &kp N                &kp E            &kp I              &kp O            &kp RIGHT_SHIFT
 &kp LCTRL       &kp Z               &kp X            &kp C        &kp D            &kp V        &lparen_lbrace    &rparen_rbrace  &kp K          &kp H                &comma_backtick  &dot_questionmark  &dquote_squote   &kp RCTRL
-                                                     &kp LALT     &kp LGUI         &none        &kp BACKSPACE     &kp SPACE       &none          &kp RGUI             &kp RALT
+                                                     &kp LALT     &kp LGUI         &mo 1        &kp BACKSPACE     &kp SPACE       &mo 1          &kp RGUI             &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        fn_layer {
+            bindings = <
+&trans  &trans           &trans           &trans           &trans           &trans                             &trans           &trans           &trans           &trans           &trans           &trans
+&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5                    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans
+&trans  &trans           &trans           &trans           &trans           &trans                             &trans           &trans           &trans           &trans           &trans           &trans
+&trans  &trans           &trans           &trans           &trans           &trans           &trans    &trans  &trans           &trans           &trans           &trans           &trans           &trans
+                                          &trans           &trans           &trans           &trans    &trans  &trans           &trans           &trans
+            >;
         };
     };
 };
