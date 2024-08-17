@@ -184,8 +184,6 @@
 &kp LCTRL       &kp Z               &kp X            &kp C        &kp D            &kp V        &lparen_lbrace    &rparen_rbrace  &kp K          &kp H                &comma_backtick  &dot_questionmark  &dquote_squote   &kp RCTRL
                                                      &kp LALT     &kp LGUI         &mo 1        &kp BACKSPACE     &kp SPACE       &mo 1          &kp RGUI             &kp RALT
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         fn_layer {
