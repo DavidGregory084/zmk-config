@@ -8,6 +8,164 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        exclamation_tilde: exclamation_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EXCLAMATION_TILDE";
+            bindings = <&kp EXCLAMATION>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ampersand_pipe: ampersand_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AMPERSAND_PIPE";
+            bindings = <&kp AMPERSAND>, <&kp NON_US_BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        hash_pound: hash_pound {
+            compatible = "zmk,behavior-mod-morph";
+            label = "HASH_POUND";
+            bindings = <&kp HASH>, <&kp NUMBER_3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        percent_dollar: percent_dollar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERCENT_DOLLAR";
+            bindings = <&kp PERCENT>, <&kp NUMBER_4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        slash_euro: slash_euro {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SLASH_EURO";
+            bindings = <&kp SLASH>, <&kp RA(NUMBER_4)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        backslash_at: backslash_at {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSLASH_AT";
+            bindings = <&kp NON_US_BACKSLASH>, <&kp AT_SIGN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        underscore_lsquare: underscore_lsquare {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UNDERSCORE_LSQUARE";
+            bindings = <&kp UNDERSCORE>, <&kp LEFT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        minus_lessthan: minus_lessthan {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MINUS_LESSTHAN";
+            bindings = <&kp MINUS>, <&kp COMMA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        plus_greaterthan: plus_greaterthan {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PLUS_GREATERTHAN";
+            bindings = <&kp PLUS>, <&kp PERIOD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        equals_rsquare: equals_rsquare {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUALS_RSQUARE";
+            bindings = <&kp EQUAL>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        asterisk_caret: asterisk_caret {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ASTERISK_CARET";
+            bindings = <&kp ASTERISK>, <&kp NUMBER_6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        lparen_lbrace: lparen_lbrace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPAREN_LBRACE";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LEFT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rparen_rbrace: rparen_rbrace {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPAREN_RBRACE";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp RIGHT_BRACKET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        comma_backtick: comma_backtick {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_BACKTICK";
+            bindings = <&kp COMMA>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_questionmark: dot_questionmark {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_QUESTIONMARK";
+            bindings = <&kp PERIOD>, <&kp SLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dquote_squote: dquote_squote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DQUOTE_SQUOTE";
+            bindings = <&kp DOUBLE_QUOTES>, <&kp SINGLE_QUOTE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -20,11 +178,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &kp EXCLAMATION  &kp AMPERSAND  &kp HASH  &kp PERCENT  &kp SLASH                                                 &kp BACKSLASH  &kp UNDERSCORE  &kp MINUS  &kp PLUS  &kp EQUAL          &kp ASTERISK
-&kp TAB         &kp Q            &kp W          &kp F     &kp P        &kp B                                                     &kp J          &kp L           &kp U      &kp Y     &kp SEMICOLON      &kp ENTER
-&kp LEFT_SHIFT  &kp A            &kp R          &kp S     &kp T        &kp G                                                     &kp M          &kp N           &kp E      &kp I     &kp O              &kp RIGHT_SHIFT
-&kp LCTRL       &kp Z            &kp X          &kp C     &kp D        &kp V      &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp K          &kp H           &kp COMMA  &kp DOT   &kp DOUBLE_QUOTES  &kp RCTRL
-                                                &kp LALT  &kp LGUI     &none      &kp BACKSPACE           &kp SPACE              &none          &kp RGUI        &kp RALT
+&kp ESC         &exclamation_tilde  &ampersand_pipe  &hash_pound  &percent_dollar  &slash_euro                                    &backslash_at  &underscore_lsquare  &minus_lessthan  &plus_greaterthan  &equals_rsquare  &asterisk_caret
+&kp TAB         &kp Q               &kp W            &kp F        &kp P            &kp B                                          &kp J          &kp L                &kp U            &kp Y              &kp SEMICOLON    &kp ENTER
+&kp LEFT_SHIFT  &kp A               &kp R            &kp S        &kp T            &kp G                                          &kp M          &kp N                &kp E            &kp I              &kp O            &kp RIGHT_SHIFT
+&kp LCTRL       &kp Z               &kp X            &kp C        &kp D            &kp V        &lparen_lbrace    &rparen_rbrace  &kp K          &kp H                &comma_backtick  &dot_questionmark  &dquote_squote   &kp RCTRL
+                                                     &kp LALT     &kp LGUI         &none        &kp BACKSPACE     &kp SPACE       &none          &kp RGUI             &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
