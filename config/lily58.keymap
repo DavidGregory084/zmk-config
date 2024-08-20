@@ -164,6 +164,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        backspace_delete: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -178,11 +187,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC         &exclamation_tilde  &ampersand_pipe  &hash_pound  &percent_dollar  &slash_euro                                 &backslash_at   &underscore_lsquare  &minus_lessthan  &plus_greaterthan  &equals_rsquare  &asterisk_caret
-&kp TAB         &kp Q               &kp W            &kp F        &kp P            &kp B                                       &kp J           &kp L                &kp U            &kp Y              &kp SEMICOLON    &kp ENTER
-&kp LEFT_SHIFT  &kp A               &kp R            &kp S        &kp T            &kp G                                       &kp M           &kp N                &kp E            &kp I              &kp O            &kp RIGHT_SHIFT
-&kp LCTRL       &kp Z               &kp X            &kp C        &kp D            &kp V           &mo 1            &mo 1      &kp K           &kp H                &comma_backtick  &dot_questionmark  &dquote_squote   &kp RCTRL
-                                                     &kp LALT     &kp LGUI         &lparen_lbrace  &kp BACKSPACE    &kp SPACE  &rparen_rbrace  &kp RGUI             &kp RALT
+&kp ESC         &exclamation_tilde  &ampersand_pipe  &hash_pound  &percent_dollar  &slash_euro                                     &backslash_at   &underscore_lsquare  &minus_lessthan  &plus_greaterthan  &equals_rsquare  &asterisk_caret
+&kp TAB         &kp Q               &kp W            &kp F        &kp P            &kp B                                           &kp J           &kp L                &kp U            &kp Y              &kp SEMICOLON    &kp ENTER
+&kp LEFT_SHIFT  &kp A               &kp R            &kp S        &kp T            &kp G                                           &kp M           &kp N                &kp E            &kp I              &kp O            &kp RIGHT_SHIFT
+&kp LCTRL       &kp Z               &kp X            &kp C        &kp D            &kp V           &mo 1                &mo 1      &kp K           &kp H                &comma_backtick  &dot_questionmark  &dquote_squote   &kp RCTRL
+                                                     &kp LALT     &kp LGUI         &lparen_lbrace  &backspace_delete    &kp SPACE  &rparen_rbrace  &kp RGUI             &kp RALT
             >;
         };
 
