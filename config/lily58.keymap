@@ -12,7 +12,7 @@
         exclamation_tilde: exclamation_tilde {
             compatible = "zmk,behavior-mod-morph";
             label = "EXCLAMATION_TILDE";
-            bindings = <&kp EXCLAMATION>, <&kp GRAVE>;
+            bindings = <&kp EXCLAMATION>, <&kp NON_US_HASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -32,7 +32,7 @@
         hash_pound: hash_pound {
             compatible = "zmk,behavior-mod-morph";
             label = "HASH_POUND";
-            bindings = <&kp HASH>, <&kp NUMBER_3>;
+            bindings = <&kp NON_US_HASH>, <&kp NUMBER_3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -56,13 +56,12 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         backslash_at: backslash_at {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSLASH_AT";
-            bindings = <&kp NON_US_BACKSLASH>, <&kp AT_SIGN>;
+            bindings = <&kp NON_US_BACKSLASH>, <&kp APOSTROPHE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -159,7 +158,7 @@
         dquote_squote: dquote_squote {
             compatible = "zmk,behavior-mod-morph";
             label = "DQUOTE_SQUOTE";
-            bindings = <&kp DOUBLE_QUOTES>, <&kp SINGLE_QUOTE>;
+            bindings = <&kp LS(NUMBER_2)>, <&kp SINGLE_QUOTE>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
