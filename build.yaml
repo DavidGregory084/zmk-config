@@ -20,10 +20,8 @@
 include:
   - board: raytac_mdbt50q_rx
     shield: lily58_dongle
-    cmake-args: -DCONFIG_BUILD_OUTPUT_UF2=y
   - board: raytac_mdbt50q_rx
     shield: settings_reset
-    cmake-args: -DCONFIG_BUILD_OUTPUT_UF2=y
   - board: nice_nano_v2
     shield: lily58_left nice_view_adapter nice_view
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
