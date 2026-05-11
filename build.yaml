@@ -21,17 +21,26 @@ include:
   - board: raytac_mdbt50q_rx
     snippet: mdbt50q-nosd
     shield: lily58_dongle
+    artifact-name: raytac_dongle
   - board: raytac_mdbt50q_rx
     snippet: mdbt50q-nosd
     shield: settings_reset
+    artifact-name: raytac_settings_reset
+  - board: nice_nano_v2
+    snippet: nrf52840-nosd
+    shield: lily58_left nice_view_adapter nice_view
+    artifact-name: lily58_left_central
   - board: nice_nano_v2
     snippet: nrf52840-nosd
     shield: lily58_left nice_view_adapter nice_view
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: lily58_left_peripheral
   - board: nice_nano_v2
     snippet: nrf52840-nosd
     shield: lily58_right nice_view_adapter nice_view
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: lily58_right
   - board: nice_nano_v2
     snippet: nrf52840-nosd
     shield: settings_reset
+    artifact-name: nice_nano_settings_reset
