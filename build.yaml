@@ -28,16 +28,16 @@ include:
     artifact-name: raytac_settings_reset
   - board: nice_nano_v2
     snippet: nrf52840-nosd
-    shield: lily58_left nice_view_adapter nice_view
+    shield: lily58_left nice_view_adapter nice_view_custom
     artifact-name: lily58_left_central
   - board: nice_nano_v2
     snippet: nrf52840-nosd
-    shield: lily58_left nice_view_adapter nice_view
+    shield: lily58_left nice_view_adapter nice_view_custom
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: lily58_left_peripheral
   - board: nice_nano_v2
     snippet: nrf52840-nosd
-    shield: lily58_right nice_view_adapter nice_view
+    shield: lily58_right nice_view_adapter nice_view_custom
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: lily58_right
   - board: nice_nano_v2

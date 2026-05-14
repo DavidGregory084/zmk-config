@@ -14,3 +14,4 @@ manifest:
       revision: v0.3
   self:
     path: config
+    cmake: ./boards/shields/nice_view_custom/CMakeLists.txt
