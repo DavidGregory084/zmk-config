@@ -32,7 +32,7 @@ void draw_battery(lv_obj_t *canvas, const struct status_state *state) {
 
     lv_canvas_draw_rect(canvas, 2, 2, 56, 30, &rect_white_dsc);
     lv_canvas_draw_rect(canvas, 3, 3, 54, 28, &rect_black_dsc);
-    lv_canvas_draw_rect(canvas, 5, 5, (state->battery + 2) / 2, 24, &rect_white_dsc);
+    lv_canvas_draw_rect(canvas, 5, 5, (state->battery + 1) / 2, 24, &rect_white_dsc);
     lv_canvas_draw_rect(canvas, 57, 10, 9, 14, &rect_white_dsc);
     lv_canvas_draw_rect(canvas, 58, 11, 7, 12, &rect_black_dsc);
     lv_canvas_draw_rect(canvas, 59, 12, 5, 10, &rect_white_dsc);
