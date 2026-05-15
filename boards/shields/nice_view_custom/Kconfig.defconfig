@@ -32,7 +32,6 @@ config NICE_VIEW_WIDGET_CUSTOM
     bool "Custom nice!view status widget"
     select ZMK_HID_INDICATORS
     select ZMK_SPLIT_PERIPHERAL_HID_INDICATORS
-    select LV_FONT_MONTSERRAT_24
     select LV_FONT_MONTSERRAT_18
     select LV_FONT_MONTSERRAT_14
     select LV_USE_IMG
